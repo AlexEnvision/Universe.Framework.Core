@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Platforms>AnyCPU;x64;ARM32</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Universe.Helpers\Universe.Helpers.csproj" />
+    <ProjectReference Include="..\..\Common\Universe.Algorithm\Universe.Algorithm.csproj" />
+    <ProjectReference Include="..\..\Common\Universe.IO\Universe.IO.csproj" />
+    <ProjectReference Include="..\..\Common\Universe.Windows.Forms.Controls\Universe.Windows.Forms.Controls.csproj" />
+  </ItemGroup>
+
+</Project>

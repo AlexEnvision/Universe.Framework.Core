@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Universe.NetCore.CQRS</id>
+    <version>1.0.0.0</version>
+    <authors>Alex Envision</authors>
+    <owners>Alex Envision</owners>
+    <license type="file">APACHE-2.0 LICENSE.txt</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Содержит базовую реализацию CQRS (The Command and Query Responsibility Segregation). Входит в состав Universe.Framework</description>
+	  <repository type="git" url="https://gitlab.com/AlexEnvision/Universe.Framework.Core" branch="master" />
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright © Alex Envision, 2019-2022</copyright>
+    <tags>Universe.Framework</tags>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1" >
+        <dependency id="Universe.NetCore.Diagnostic" version="1.0.0.0" />
+        <dependency id="Universe.NetCore.DataAccess" version="1.0.0.0" /> 
+        <dependency id="Universe.NetCore.Helpers" version="1.0.0.0" /> 
+        <dependency id="Universe.NetCore.Types" version="1.0.0.0" /> 
+	      <dependency id="AutoMapper" version="8.1.0" />
+	      <dependency id="EntityFramework" version="6.4.4" />
+	      <dependency id="Newtonsoft.Json" version="12.0.3" />
+	      <dependency id="System.Runtime.CompilerServices.Unsafe" version="4.5.3" />
+	      <dependency id="System.Threading.Tasks.Extensions" version="4.5.4"  />
+	      <dependency id="System.ValueTuple" version="4.3.0"  />
+	      <dependency id="Unity.Abstractions" version="5.11.6"  />
+      </group>
+      <group targetFramework=".NET6.0" >
+        <dependency id="Universe.NetCore.Diagnostic" version="1.0.0.0" />
+        <dependency id="Universe.NetCore.DataAccess" version="1.0.0.0" />
+        <dependency id="Universe.NetCore.Helpers" version="1.0.0.0" />
+        <dependency id="Universe.NetCore.Types" version="1.0.0.0" />
+        <dependency id="AutoMapper" version="8.1.0" />
+        <dependency id="EntityFramework" version="6.4.4" />
+        <dependency id="Newtonsoft.Json" version="12.0.3" />
+        <dependency id="System.Runtime.CompilerServices.Unsafe" version="4.5.3" />
+        <dependency id="System.Threading.Tasks.Extensions" version="4.5.4"  />
+        <dependency id="System.ValueTuple" version="4.3.0"  />
+        <dependency id="Unity.Abstractions" version="5.11.6"  />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\License\APACHE-2.0 LICENSE.txt" target="" />
+	  <!--<file src="..\Common\Universe.CQRS\bin\x64\Release\netcoreapp3.1\Universe.CQRS.dll" target="lib\netcoreapp3.1\x64" />-->
+    <!--<file src="..\Common\Universe.CQRS\bin\x64\Release\netcoreapp3.1\Universe.SqlBulkTools.dll" target="lib\netcoreapp3.1" />-->
+    <file src="..\Common\Universe.CQRS\bin\Release\netcoreapp3.1\Universe.CQRS.dll" target="lib\netcoreapp3.1" />
+    <file src="..\Common\Universe.CQRS\bin\Release\netcoreapp3.1\Universe.SqlBulkTools.dll" target="lib\netcoreapp3.1" />
+  </files>
+</package>

@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Universe.CQRS.snk</AssemblyOriginatorKeyFile>
+    <Platforms>AnyCPU;x64;ARM32</Platforms>
+    <FileVersion>1.0.0.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.0" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Unity" Version="5.11.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common.Tools\Universe.SqlBulkTools\Universe.SqlBulkTools.csproj" />
+    <ProjectReference Include="..\Universe.DataAccess\Universe.DataAccess.csproj" />
+    <ProjectReference Include="..\Universe.Diagnostic\Universe.Diagnostic.csproj" />
+    <ProjectReference Include="..\Universe.Helpers\Universe.Helpers.csproj" />
+  </ItemGroup>
+
+</Project>

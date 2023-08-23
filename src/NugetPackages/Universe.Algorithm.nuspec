@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Universe.NetCore.Algorithm</id>
+    <version>1.0.0.0</version>
+    <authors>Alex Envision</authors>
+    <owners>Alex Envision</owners>
+    <license type="file">APACHE-2.0 LICENSE.txt</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Содержит реализации алгоритмов для Universe.Framework</description>
+	  <repository type="git" url="https://gitlab.com/AlexEnvision/Universe.Framework.Core" branch="master" />
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright © Alex Envision, 2019-2022</copyright>
+    <tags>Universe.Framework</tags>
+    <dependencies>
+       <group targetFramework=".NETCoreApp3.1" >
+	       <dependency id="Universe.NetCore.Types" version="1.0.0.0" />
+         <dependency id="Universe.NetCore.Helpers" version="1.0.0.0" />
+         <dependency id="Universe.NetCore.Diagnostic" version="1.0.0.0" /> 
+	       <dependency id="System.ValueTuple" version="4.3.0"  />
+       </group>
+      <group targetFramework=".NET6.0" >
+        <dependency id="Universe.NetCore.Types" version="1.0.0.0" />
+        <dependency id="Universe.NetCore.Helpers" version="1.0.0.0" />
+        <dependency id="Universe.NetCore.Diagnostic" version="1.0.0.0" />
+        <dependency id="System.ValueTuple" version="4.3.0"  />
+      </group>
+      <group targetFramework="monoandroid8.0" >
+        <dependency id="Universe.NetCore.Types" version="1.0.0.0" />
+        <dependency id="Universe.NetCore.Helpers" version="1.0.0.0" />
+        <dependency id="Universe.NetCore.Diagnostic" version="1.0.0.0" />
+        <dependency id="System.ValueTuple" version="4.3.0"  />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\License\APACHE-2.0 LICENSE.txt" target="" />
+    <!--<file src="..\Common\Universe.Algorithm\bin\x64\Release\netcoreapp3.1\Universe.Algorithm.dll" target="lib\netcoreapp3.1\x64" />-->
+    <file src="..\Common\Universe.Algorithm\bin\Release\netcoreapp3.1\Universe.Algorithm.dll" target="lib\netcoreapp3.1" />
+
+    <file src="..\Common\Universe.Algorithm\bin\Release\netcoreapp3.1\Universe.Algorithm.dll" target="lib\monoandroid8.0" />
+  </files>
+</package>

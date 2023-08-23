@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Platforms>AnyCPU;x64;ARM32</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\HOWLING - USER\.nuget\packages\nlog.config\4.6.8\contentFiles\any\any\NLog.config" />
+    <None Remove="C:\Users\HOWLING - USER\.nuget\packages\nlog.schema\4.6.8\contentFiles\any\any\NLog.xsd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="NLog" Version="4.6.8" />
+    <PackageReference Include="NLog.Schema" Version="4.6.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common.Math\Universe.NumbesTypes\Universe.NumbesTypes.csproj" />
+    <ProjectReference Include="..\..\Common\Universe.CQRS\Universe.CQRS.csproj" />
+    <ProjectReference Include="..\..\Common\Universe.DataAccess\Universe.DataAccess.csproj" />
+    <ProjectReference Include="..\..\Common\Universe.Diagnostic\Universe.Diagnostic.csproj" />
+    <ProjectReference Include="..\..\Common\Universe.Algorithm\Universe.Algorithm.csproj" />
+    <ProjectReference Include="..\..\Common\Universe.Helpers\Universe.Helpers.csproj" />
+    <ProjectReference Include="..\..\Common\Universe.IO\Universe.IO.csproj" />
+    <ProjectReference Include="..\..\Common\Universe.REST\Universe.REST.csproj" />
+    <ProjectReference Include="..\..\Common\Universe.Types\Universe.Types.csproj" />
+    <ProjectReference Include="..\Universe.Framework.DataAccess.Test\Universe.Framework.DataAccess.Test.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="REST\" />
+  </ItemGroup>
+
+</Project>

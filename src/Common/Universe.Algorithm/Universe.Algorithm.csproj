@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Universe.Algorithm.snk</AssemblyOriginatorKeyFile>
+    <Platforms>AnyCPU;x64;ARM32</Platforms>
+    <FileVersion>1.0.0.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build" Version="2.12.1" />
+    <PackageReference Include="NuGet.CommandLine" Version="4.9.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Universe.Diagnostic\Universe.Diagnostic.csproj" />
+    <ProjectReference Include="..\Universe.Helpers\Universe.Helpers.csproj" />
+  </ItemGroup>
+
+</Project>

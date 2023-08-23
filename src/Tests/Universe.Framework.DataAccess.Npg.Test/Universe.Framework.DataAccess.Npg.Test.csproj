@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Platforms>AnyCPU;x64;ARM32</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="EntityFramework6.Npgsql" Version="6.4.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Universe.DataAccess.Npg\Universe.DataAccess.Npg.csproj" />
+    <ProjectReference Include="..\..\Common\Universe.DataAccess\Universe.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>

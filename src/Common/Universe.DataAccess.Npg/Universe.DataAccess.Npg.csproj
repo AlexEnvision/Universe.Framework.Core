@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Platforms>AnyCPU;ARM32;x64</Platforms>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Universe.DataAccess.Npg.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+    <Version>1.0.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="GettingStarted\Initializer.cs" />
+    <Compile Remove="GettingStarted\Migrations\Configuration.cs" />
+    <Compile Remove="GettingStarted\NpgSqlConfiguration.cs" />
+    <Compile Remove="GettingStarted\UniverseNpgDbContext.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="GettingStarted\Initializer.cs" />
+    <None Include="GettingStarted\Migrations\Configuration.cs" />
+    <None Include="GettingStarted\NpgSqlConfiguration.cs" />
+    <None Include="GettingStarted\UniverseNpgDbContext.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="EntityFramework6.Npgsql" Version="6.4.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Universe.DataAccess\Universe.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>

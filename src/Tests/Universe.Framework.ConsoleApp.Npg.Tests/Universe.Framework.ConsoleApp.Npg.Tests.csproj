@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Platforms>AnyCPU;x64;ARM32</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Universe.CQRS\Universe.CQRS.csproj" />
+    <ProjectReference Include="..\..\Common\Universe.Diagnostic\Universe.Diagnostic.csproj" />
+    <ProjectReference Include="..\Universe.Framework.DataAccess.Npg.Test\Universe.Framework.DataAccess.Npg.Test.csproj" />
+  </ItemGroup>
+
+</Project>

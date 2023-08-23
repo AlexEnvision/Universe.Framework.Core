@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Universe.NetCore.DataAccess.Npg</id>
+    <version>1.0.0.0</version>
+    <authors>Alex Envision</authors>
+    <owners>Alex Envision</owners>
+    <license type="file">APACHE-2.0 LICENSE.txt</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Содержит базовую реализацию уровня доступа к данным через EntityFramework для PostgreSQL. Входит в состав Universe.Framework</description>
+	  <repository type="git" url="https://gitlab.com/AlexEnvision/Universe.Framework.Core" branch="master" />
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright © Alex Envision, 2019-2022</copyright>
+    <tags>Universe.Framework, Entity.Framework, PostgeSQL</tags>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1" >
+        <dependency id="Universe.NetCore.DataAccess" version="1.0.0.0" />
+        <dependency id="EntityFramework" version="6.4.4" />
+        <dependency id="EntityFramework6.Npgsql" version="6.4.3" />
+      </group>
+      <group targetFramework=".NET6.0" >
+        <dependency id="Universe.NetCore.DataAccess" version="1.0.0.0" />
+        <dependency id="EntityFramework" version="6.4.4" />
+        <dependency id="EntityFramework6.Npgsql" version="6.4.3" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <!--<files include="..\Common\Universe.DataAccess.Npg\GettingStarted\*.*" buildAction="compile" copyToOutput="false" flatten="true" />
+      <files include="..\Common\Universe.DataAccess.Npg\GettingStarted\Migrations\*.*" buildAction="compile" copyToOutput="false" flatten="true" />-->
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="..\License\APACHE-2.0 LICENSE.txt" target="" />
+    <!--<file src="..\Common\Universe.DataAccess.Npg\bin\x64\Release\netcoreapp3.1\Universe.DataAccess.Npg.dll" target="lib\netcoreapp3.1\x64" />-->
+    <file src="..\Common\Universe.DataAccess.Npg\bin\Release\netcoreapp3.1\Universe.DataAccess.Npg.dll" target="lib\netcoreapp3.1" />
+    <!--<file src="..\Common\Universe.DataAccess.Npg\GettingStarted\*.*" target="content" />
+    <file src="..\Common\Universe.DataAccess.Npg\GettingStarted\Migrations\*.*" target="content\Migrations" />
+    <file src="..\Common\Universe.DataAccess.Npg\GettingStarted\*.*" target="contentFiles\any\any" />
+    <file src="..\Common\Universe.DataAccess.Npg\GettingStarted\Migrations\*.*" target="contentFiles\any\any\Migrations" />-->
+  </files>
+</package>

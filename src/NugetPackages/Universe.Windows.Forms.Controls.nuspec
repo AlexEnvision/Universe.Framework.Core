@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Universe.NetCore.Windows.Forms.Controls</id>
+    <version>1.0.0.0</version>
+    <authors>Alex Envision</authors>
+    <owners>Alex Envision</owners>
+    <license type="file">APACHE-2.0 LICENSE.txt</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Вспомогательные методы и функции для элементов управления Windows Forms</description>
+	  <repository type="git" url="https://gitlab.com/AlexEnvision/Universe.Framework.Core" branch="master" />
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright © Alex Envision, 2019-2022</copyright>
+    <tags>Universe.Framework</tags>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1" >
+        <dependency id="Newtonsoft.Json" version="12.0.3" />
+      </group>
+      <group targetFramework=".NET6.0" >
+        <dependency id="Newtonsoft.Json" version="12.0.3" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\License\APACHE-2.0 LICENSE.txt" target="" />
+    <!--<file src="..\Common\Universe.Windows.Forms.Controls\bin\x64\Release\netcoreapp3.1\Universe.Windows.Forms.Controls.dll" target="lib\netcoreapp3.1\x64" />-->
+    <file src="..\Common\Universe.Windows.Forms.Controls\bin\Release\netcoreapp3.1\Universe.Windows.Forms.Controls.dll" target="lib\netcoreapp3.1" />
+  </files>
+</package>
